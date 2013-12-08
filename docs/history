@@ -101,6 +101,11 @@ add this to routes.rb:
    root 'users#index'
 ------
 
+....
+
+continued ...
+http://ruby.railstutorial.org/chapters/filling-in-the-layout#top
+5.2 Sass and the asset pipeline
 git add .
 git commit -m "Add precompiled assets for Heroku"
 git push 
