@@ -96,9 +96,16 @@ Edit micropost.rb
 ------
   validates :content, length: { maximum: 255 }
 ------
+add this to routes.rb:
+------
+   root 'users#index'
+------
 
 git add .
 git commit -m "Add precompiled assets for Heroku"
 git push 
 git push heroku master
 heroku run rake db:migrate
+
+   
+   
