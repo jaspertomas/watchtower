@@ -43,3 +43,29 @@ bundle install
 
 # run the program for the first time
 rails server 
+
+edit .gitignore, append the following
+----
+
+# Ignore other unneeded files.
+database.yml
+doc/
+*.swp
+*~
+.project
+.DS_Store
+.idea
+.secret
+----
+
+Heroku setup:
+add the following to the bottom of Gemfile
+----
+group :production do
+  gem 'pg', '0.15.1'
+  gem 'rails_12factor', '0.0.2'
+end
+----
+bundle install --without production
+rake assets:precompile
+ 
