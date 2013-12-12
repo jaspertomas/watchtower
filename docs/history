@@ -104,13 +104,4 @@ add this to routes.rb:
 ....
 
 continued ...
-http://ruby.railstutorial.org/chapters/filling-in-the-layout#top
-5.2 Sass and the asset pipeline
-git add .
-git commit -m "Add precompiled assets for Heroku"
-git push 
-git push heroku master
-heroku run rake db:migrate
-
-   
-   
+http://ruby.railstutorial.org/chapters/sign-in-sign-out#top
