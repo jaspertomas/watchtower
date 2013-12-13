@@ -109,6 +109,9 @@ bundle exec rake test:prepare
 --------
 to reset heroku database:
 --------
+rake assets:precompile
+git add .
+git commit -am "rake assets:precompile"
 git push heroku
 heroku pg:reset DATABASE --confirm watchtowerph
 heroku run rake db:migrate
