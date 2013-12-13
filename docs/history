@@ -101,7 +101,21 @@ add this to routes.rb:
    root 'users#index'
 ------
 
-....
+to reset database:
+------
+bundle exec rake db:reset
+bundle exec rake db:populate
+bundle exec rake test:prepare
+--------
+to reset heroku database:
+--------
+git push heroku
+heroku pg:reset DATABASE --confirm watchtowerph
+heroku run rake db:migrate
+heroku run rake db:populate
+heroku restart # if it doesn't work
+--------
 
 continued ...
-http://ruby.railstutorial.org/chapters/sign-in-sign-out#top
+http://ruby.railstutorial.org/chapters/updating-showing-and-deleting-users#top
+9.3.4 Partial refactoring
