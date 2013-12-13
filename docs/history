@@ -101,7 +101,12 @@ add this to routes.rb:
    root 'users#index'
 ------
 
-....
+to reset database:
+------
+bundle exec rake db:reset
+bundle exec rake db:populate
+bundle exec rake test:prepare
+--------
 
 continued ...
 http://ruby.railstutorial.org/chapters/updating-showing-and-deleting-users#top
