@@ -113,7 +113,7 @@ rake assets:precompile
 git add .
 git commit -am "rake assets:precompile"
 git push heroku
-heroku pg:reset DATABASE --confirm watchtowerph
+heroku pg:reset DATABASE
 heroku run rake db:migrate
 heroku run rake db:populate
 heroku restart # if it doesn't work
