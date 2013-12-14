@@ -121,4 +121,4 @@ heroku restart # if it doesn't work
 
 continued ...
 http://ruby.railstutorial.org/chapters/user-microposts#top
-10.3.3 A proto-feed
+10.3.4 Destroying microposts
