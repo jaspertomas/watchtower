@@ -118,7 +118,3 @@ heroku run rake db:migrate
 heroku run rake db:populate
 heroku restart # if it doesn't work
 --------
-
-continued ...
-http://ruby.railstutorial.org/chapters/user-microposts#top
-10.3.4 Destroying microposts
