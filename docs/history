@@ -118,3 +118,7 @@ heroku run rake db:migrate
 heroku run rake db:populate
 heroku restart # if it doesn't work
 --------
+
+continued:
+http://ruby.railstutorial.org/chapters/following-users#code-relationships_controller_ajax
+11.4.1 Extensions to the sample application
